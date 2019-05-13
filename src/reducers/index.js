@@ -6,3 +6,11 @@ const songsReducer = () => {
     { title: 'Garota de ipanema', duration: '4:35'}
   ];
 };
+
+const selectedSongReducer = (selectedSong = null, action) => {
+  if(action.type = 'SONG_SELECTED') {
+    return action.payload;
+  }
+
+  return selectedSong;
+};
